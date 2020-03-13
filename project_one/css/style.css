@@ -131,6 +131,9 @@ section{
     height: 5px;
     width: 100%;
 }
+.orange_title  {
+    background-color: #ff8c2c;   
+}
 .white_section{
     background-color: #ffffff;
     text-transform: uppercase;
