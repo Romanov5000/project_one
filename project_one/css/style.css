@@ -19,12 +19,19 @@ h2{
     font-weight: 400;
     
 }
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #86878b;
+    line-height: 20px;
+    font-weight: 400;
+}
 .container{
     max-width: 1400px;
     margin: 0 auto;
     
 }
-.section{
+section{
     padding: 100px 140px 95px 140px;
 }
 .section_header{
@@ -47,11 +54,7 @@ h2{
 
 }
 .section_header p{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    color: #86878b;
-    line-height: 20px;
-    margin-bottom: 75px;
+     margin-bottom: 75px;
 }
 .blocks{
     display: flex;
@@ -75,68 +78,8 @@ h2{
     margin-bottom: 21px;
 
 }
-.blocks p{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    color: #86878b;
-    line-height: 20px;
-    font-weight: 400;
-}
+
 .blocks img{
     margin-bottom: 21px;
-}
-.section2{
-    background-image: url(../img/fon.png);
-    height: 320px;
-}
-.content2{
-    text-align: center;
-}
-.content2 h2{
-    color: #ffffff;
-    position: relative;
-    margin-bottom: 55px;
-}
-.section2 h2::after{
-    content: "";
-    display: block;
-    width: 64px;
-    height: 2px;
-    background-color: #ffffff;
-    position: absolute;
-    left: calc(50% - 32px);
-    bottom: -25px;
-}
-.section2 p{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-    color:#86878b;
-    margin-bottom: 30px;
-}
-
-.content2{
-    position: relative;
-    top: 75px;
-}
-footer{
-    background-image: url(../img/Footer\ Panel.png);
-    height: 100px;
-    
-}
-.logo{
-    text-align: center;
-    position: relative;
-    top: 40px;
-}
-footer p{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 20px;
-    color:#ffffff;
-    position: relative;
-    top: 7px;           /* Изначально хотел сделать margin-bottom для ссылок, но что-то не срослось, поэтому сделал так*/
 }
 
