@@ -35,6 +35,14 @@ p{
     line-height: 24px;
     font-weight: 700;
 }
+.btn{
+    font-family: 'OpenSans', sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+    text-decoration: none;
+    border: 2px solid #ffffff;
+    padding: 13px 30px ;
+}
 .container{
     max-width: 1400px;
     margin: 0 auto;
@@ -76,6 +84,10 @@ section{
     text-align: center;
     width: 30%;
     
+}
+.one_block .up{
+    position: relative;
+    bottom: 40px;
 }
 .one_block .title{
     /*font-family: 'Open Sans', sans-serif;
@@ -137,4 +149,86 @@ section{
 .white_section{
     background-color: #ffffff;
     text-transform: uppercase;
+}
+.block_pricing_options .section_header p{
+    margin-bottom: 118px;
+}
+
+
+/* section stylish_axure_design*/
+
+
+.stylish_axure_design{
+    background-image: url(../img/fon.png);
+    background-size: cover;
+    padding: 75px 0px 60px;
+}
+.stylish_axure_design .section_header h2{
+    color: #ffffff;
+}
+.stylish_axure_design .section_header h2::after{
+  background-color: #ffffff;
+}
+.stylish_axure_design .section_header p{
+    opacity: 0.8;
+    margin-bottom: 35px;
+}
+.btns_block{
+    display: flex;
+    justify-content: center;
+}
+
+/*   footer  */
+
+.footer{
+    background-image: url(../img/Footer\ Panel.png);
+    text-align: center;
+    padding: 35px 0px 15px;
+}
+.sprite{
+   background-image: url(../img/logo.png);
+   background-repeat: no-repeat;
+   display: inline-block;
+   
+}
+
+.facebook{
+    width: 30px;
+    height: 30px;
+    background-position: -25px -25px;
+}
+.twitter{
+    width: 40px;
+    height: 30px;
+    background-position: -25px -25px;
+}
+.gmail{
+    width: 50px;
+    height: 30px;
+    background-position: -25px -25px;
+}
+.pirescope{
+    width: 42px;
+    height: 30px;
+    background-position: -25px -25px;
+}
+.instagram{
+    width: 50px;
+    height: 30px;
+    background-position: -25px -25px;
+}
+.hz{
+    width: 50px;
+    height: 30px;
+    background-position: -25px -25px;
+}
+.wifi{
+    width: 50px;
+    height: 30px;
+    background-position: -25px -25px;
+}
+.footer p{
+    color: #ffffff;
+    font-size: 12px;
+    opacity: 0.5;
 }
