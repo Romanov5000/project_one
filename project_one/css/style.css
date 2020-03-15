@@ -48,6 +48,39 @@ p{
     margin: 0 auto;
     
 }
+a{
+    text-decoration: none;
+}
+
+/* header   */
+
+.header{
+    background-color: black;
+    padding: 23px 150px;
+}
+.blocks .logo_header img{
+    margin-bottom: 0px;
+}
+.blocks li {
+    
+    list-style: none;
+    margin-right: 50px;
+}
+.blocks li:last-child{
+    margin-right: 0px;
+}
+.blocks li p{
+    font-family: 'OpenSans', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+}
+.header .blocks{
+    align-items: center;
+    
+}
+
+/* section awesome  */
+
 section{
     padding: 100px 140px 95px 140px;
 }
