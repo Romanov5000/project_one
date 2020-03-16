@@ -56,10 +56,10 @@ a{
 
 input{
    border: none;
-   margin-bottom: 30px;
    height: 30px;
    width: 100%;
    border-bottom: 1px solid #d6d6d6;
+   margin-bottom: 30px;
 }
 input:focus {
     outline: none;
@@ -72,6 +72,7 @@ input:focus {
     line-height: 20px;
     font-weight: 400;
     color: #d6d6d6;
+    padding: 0px 15px; /*только визуально сдвигает, но сам текст в импуте начинается без паддинга*/
   }
 
 /* header   */
@@ -106,6 +107,74 @@ input:focus {
 .scale{
     transition: 1s;
 }
+
+
+/* section exit  */
+
+.exit .blocks{
+    align-items: flex-end;
+}
+.exit .modern_axure h2{
+    color: white;
+    margin-bottom: 75px;
+}
+.exit .section_header h2::after{
+    background-color: #fff;
+    left: 0px;
+    bottom: -40px;
+}
+
+.modern_axure .section_header{
+    text-align: left;
+}
+
+.exit .modern_axure p{
+    opacity: 0.8;
+   width: 460px;
+   margin-bottom: 45px;
+}
+.exit{
+    background-image: url(../img/fon_section_axit.png);
+}
+
+.free_trial{
+    background-color: #f5f5f5;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    
+}
+.exit .btns_block{
+    display: flex;
+    justify-content: left;
+}
+
+.exit .registration button{
+    width: 100%;
+    border-radius: 0px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.white_fon_registration{
+    background-color: #ffffff;
+   
+
+}
+.exit .white_fon_registration input{
+    margin-bottom: 50px;
+}
+.form_registration{
+    padding: 37px 37px 0px 37px;
+}
+.exit .title{
+    color: #333333;
+    padding: 15px 5px 15px;
+}
+.free{
+    color: #ff8b38;
+    text-transform: uppercase;
+}
+
 
 /* section awesome  */
 
@@ -274,6 +343,7 @@ textarea:focus{
 .send_message .btn{
     background-color: #ff9b51;
     border-radius: 5px;
+    border: 2px solid #ff9b51;
     
 }
 
@@ -338,4 +408,7 @@ button:focus{
     color: #ffffff;
     font-size: 12px;
     opacity: 0.5;
+}
+.footer .scale:hover{
+    transform: scale(1.13);
 }
