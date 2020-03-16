@@ -175,6 +175,33 @@ input:focus {
     text-transform: uppercase;
 }
 
+/* div social_media  */
+
+.social_media{
+    padding: 25px 140px;
+    border-bottom: 1px solid #d6d6d6;
+}
+.social_logo .scale a{
+    color: #cccccc;
+     
+}
+.social_logo .scale{
+    margin-right: 60px;
+    font-size: 55px;
+}
+.social_logo .scale:last-child{
+    margin-right: 0px;
+}
+.social_media_text{
+    width: 370px;
+}
+.social_media .blocks .social_media_block_left .title {
+    color: #333333;
+    margin-bottom: 6px;
+}
+.social_media .blocks{
+    align-items: center;
+}
 
 /* section awesome  */
 
