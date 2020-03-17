@@ -179,7 +179,7 @@ input:focus {
 
 .social_media{
     padding: 25px 140px;
-    border-bottom: 1px solid #d6d6d6;
+   /* border-bottom: 1px solid #d6d6d6;    1 способ - не получилось задать тень линии*/
 }
 .social_logo .scale a{
     color: #cccccc;
@@ -201,6 +201,17 @@ input:focus {
 }
 .social_media .blocks{
     align-items: center;
+}
+.social_media::after{                   /* 2 способ, задал тень, но слишком много текста нужно прописывать, неудобно*/
+    content: "";
+    display: block;
+    width: 1400px;
+    height: 1px;
+    background-color: #d6d6d6;
+    position: relative;
+    right: 140px;
+    bottom: -25px;
+    box-shadow: 0 1px 0 #d6d6d6;
 }
 
 /* section awesome  */
