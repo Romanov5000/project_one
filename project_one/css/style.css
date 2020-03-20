@@ -42,6 +42,7 @@ p{
     text-decoration: none;
     border: 2px solid #ffffff;
     padding: 13px 30px ;
+    transition: 1s;
 }
 
 
@@ -205,7 +206,7 @@ input:focus {
 .social_media::after{                   /* 2 способ, задал тень, но слишком много текста нужно прописывать, неудобно*/
     content: "";
     display: block;
-    width: 1400px;
+    width: 125%;
     height: 1px;
     background-color: #d6d6d6;
     position: relative;
@@ -301,10 +302,11 @@ section{
     color: #ffffff; /*как убрать нижний отступ?*/
     margin-bottom: 0px;
 }
-.black_section .open_sans_lang p{
+
+.open_sans_lang {
     font-weight: 600;
     line-height: 24px;
-
+    font-style: italic;
 }
 .Orange_section{
     background-color: #ff8c2c;
@@ -321,6 +323,53 @@ section{
 .block_pricing_options .section_header p{
     margin-bottom: 118px;
 }
+
+
+
+
+/* section comments*/
+
+.blocks_avatar_name{
+    display: flex;
+    align-items: center;
+}
+.blocks_avatar_name .photo img{
+    margin-bottom: 0px;
+}
+.comment_name{
+    padding: 0px 0px 0px 15px;
+}
+.comments .title{
+    color: #333333;
+}
+.comment_text{
+    width: 26%
+}
+.window_text_comment{
+    position: relative;
+    width: 275px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    bottom: 25px;
+    padding: 25px 12px;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 400;
+	
+}
+.window_text_comment::before{
+    content: " ";
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    left: 20px; 
+    top: 100%;
+    border: 15px solid transparent;
+    border-top-color:#f5f5f5;
+    
+}
+
+
 
 
 /* section stylish_axure_design*/
@@ -344,11 +393,12 @@ section{
 .btns_block{
     display: flex;
     justify-content: center;
+    
 }
 .btns_block .btn:hover{
     background-color: #ffffff;
     color: black;
-    transition: 1s;
+    
 }
 
 
@@ -359,14 +409,13 @@ section{
 }
 .blocks_information{
     display: flex;
+    justify-content: space-between;
+    width: 100%;
     
 }
-.information{
-    width: 527px;
-    
-}
+
 .information .message textarea{
-    margin-left: 64px;
+    
     width: 527px;
     height: 153px;
     border: none;
