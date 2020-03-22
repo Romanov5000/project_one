@@ -57,24 +57,37 @@ a{
 
 input{
    border: none;
-   height: 30px;
    width: 100%;
    border-bottom: 1px solid #d6d6d6;
-   margin-bottom: 30px;
 }
 input:focus {
     outline: none;
-  }
+    border-bottom: 1px solid #ff9b51;
+}
+  input:focus + label{
+    color: #ff9b51;
+    top: -25px;
+    transform: scale(0.85);
+}
+label{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #d6d6d6;  
+}
+
+
 
   
-::placeholder{
+/*::placeholder{
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     line-height: 20px;
     font-weight: 400;
     color: #d6d6d6;
     padding: 0px 15px; /*только визуально сдвигает, но сам текст в импуте начинается без паддинга*/
-  }
+  
 
 /* header   */
 
@@ -110,31 +123,36 @@ input:focus {
 }
 
 
-/* section exit  */
+/* section axit  */
 
-.exit .blocks{
+.axit .blocks{
     align-items: flex-end;
 }
-.exit .modern_axure h2{
+.axit .modern_axure h2{
     color: white;
     margin-bottom: 75px;
 }
-.exit .section_header h2::after{
+.axit .section_header h2::after{
     background-color: #fff;
     left: 0px;
     bottom: -40px;
 }
-
+.modern_axure{
+    width: 50%;
+}
+.registration{
+    width: 33%;
+}
 .modern_axure .section_header{
     text-align: left;
 }
 
-.exit .modern_axure p{
+.axit .modern_axure p{
     opacity: 0.8;
    width: 460px;
    margin-bottom: 45px;
 }
-.exit{
+.axit{
     background-image: url(../img/fon_section_axit.png);
 }
 
@@ -145,12 +163,12 @@ input:focus {
     border-top-right-radius: 5px;
     
 }
-.exit .btns_block{
+.axit .btns_block{
     display: flex;
     justify-content: left;
 }
 
-.exit .registration button{
+.axit .registration button{
     width: 100%;
     border-radius: 0px;
     border-bottom-left-radius: 5px;
@@ -161,13 +179,13 @@ input:focus {
    
 
 }
-.exit .white_fon_registration input{
+.axit .white_fon_registration input{
     margin-bottom: 50px;
 }
-.form_registration{
-    padding: 37px 37px 0px 37px;
+.form_registration {
+    padding: 50px 37px 0px 37px;
 }
-.exit .title{
+.axit .title{
     color: #333333;
     padding: 15px 5px 15px;
 }
@@ -175,7 +193,9 @@ input:focus {
     color: #ff8b38;
     text-transform: uppercase;
 }
-
+.axit .input_row{
+    margin-bottom: 0px;
+}
 /* div social_media  */
 
 .social_media{
@@ -284,8 +304,9 @@ section{
    background-color: #303030;
 
 }
-.one_block p{
+.block_pricing_options .one_block p{
     padding: 13px 0px; 
+    border-top: 1px solid #f5f5f5;
 }
 .price {
     font-family: 'Merriweather', serif;
@@ -303,6 +324,8 @@ section{
     margin-bottom: 0px;
 }
 
+
+
 .open_sans_lang {
     font-weight: 600;
     line-height: 24px;
@@ -312,6 +335,10 @@ section{
     background-color: #ff8c2c;
     height: 5px;
     width: 100%;
+    
+}
+.block_pricing_options .orange_title p{
+    border-top: none;
 }
 .orange_title  {
     background-color: #ff8c2c;   
@@ -407,6 +434,9 @@ section{
 .contact_us{
     text-align: center;
 }
+.contact_us .information{
+    width: 46%;
+}
 .blocks_information{
     display: flex;
     justify-content: space-between;
@@ -414,17 +444,38 @@ section{
     
 }
 
-.information .message textarea{
+textarea{
     
-    width: 527px;
-    height: 153px;
+    width: 100%;
     border: none;
     border-bottom: 1px solid #d6d6d6;
     resize: none;
 }
-
+.information .message{
+    position: relative;
+}
+.information .message label{
+    position: absolute;
+    left: 13px;
+    /*top: 0px;*/
+    transition: top 0.5s;
+    top: -5px;
+}
+textarea:focus {
+    outline: none;
+    border-bottom: 1px solid #ff9b51;
+}
+.message textarea:focus + label{
+    color: #ff9b51;
+    top: -25px;
+    transform: scale(0.85);
+}
 textarea:focus{
     outline: none;
+}
+.input_row{
+    position: relative;
+    margin-bottom: 48px;
 }
 
 .send_message .btn{
@@ -440,6 +491,14 @@ button:focus{
 .send_message button:hover{
     background-color: #212121;
     transition: 1s;
+}
+
+.input_row label{
+    position: absolute;
+    left: 13px;
+    top: 0px;
+    transition: top 0.5s;
+    top: -5px;
 }
 
 /*   footer  */
