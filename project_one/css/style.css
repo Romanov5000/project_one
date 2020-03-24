@@ -29,6 +29,7 @@ p{
     color: #86878b;
     line-height: 20px;
     font-weight: 400;
+    margin-bottom: 0rem;
 }
 .title{
     font-size: 20px;
@@ -44,7 +45,12 @@ p{
     padding: 13px 30px ;
     transition: 1s;
 }
-
+.btn:focus{
+    border: none;
+    background-color: white;
+    box-shadow: none;
+    color: black;
+}
 
 .container{
     max-width: 1400px;
@@ -54,7 +60,10 @@ p{
 a{
     text-decoration: none;
 }
-
+a:hover{
+    color: none;
+    text-decoration: none;
+}
 input{
    border: none;
    width: 100%;
@@ -98,6 +107,7 @@ label{
 .blocks .logo_header img{
     margin-bottom: 0px;
 }
+
 .blocks li {
     
     list-style: none;
@@ -120,6 +130,9 @@ label{
 }
 .scale{
     transition: 1s;
+}
+dl, ol, ul {
+    margin-bottom: 0rem;
 }
 
 
@@ -174,6 +187,9 @@ label{
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
+.axit .registration .send_message .btn{
+    padding: 20px 13px;
+}
 .white_fon_registration{
     background-color: #ffffff;
    
@@ -187,7 +203,7 @@ label{
 }
 .axit .title{
     color: #333333;
-    padding: 15px 5px 15px;
+    padding: 20px 5px 20px;
 }
 .free{
     color: #ff8b38;
@@ -226,14 +242,88 @@ label{
 .social_media::after{                   /* 2 способ, задал тень, но слишком много текста нужно прописывать, неудобно*/
     content: "";
     display: block;
-    width: 125%;
+    width: 125.6%;
     height: 1px;
     background-color: #d6d6d6;
     position: relative;
     right: 140px;
     bottom: -25px;
-    box-shadow: 0 1px 0 #d6d6d6;
+    box-shadow: 0px 1px 1px 1px #d6d6d6;
 }
+
+
+
+/* section tabs   */
+
+.tabs{
+    background-color: #f5f5f5;
+}
+.padding_none{
+    padding-right: 0px;
+    padding-left: 0px;
+    padding: 0rem;
+}
+.tabs .row .radius_top {
+    border-radius: 5px 5px 0px 0px;
+}
+.tabs .row .radius_bottom{
+    border-radius: 0px 0px 5px 5px;
+}
+
+.tabs_cub_tow .black_section {
+    text-transform: uppercase;
+    padding: 45px 5px;
+    text-align: center;
+    border-top: 1px solid #f5f5f5;
+    transition: 1s;
+}
+.tabs_cub_tow .black_section p{
+    font-size: 14px;
+}
+.tabs_cub_tow .black_section{
+    border-radius: 0rem;
+}
+.tabs .black_section:hover{
+    background-color: #86878b;
+}
+/*.tabs .black_section:focus{
+    background-color: #ff9b51;
+    
+}
+*/
+
+.button_download{
+    background-color: #ff8b38;
+    padding: 15px 25px;
+    box-shadow: 1px 1px 5px 0.5px #d6d6d6;
+    border: none
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #333333;
+    
+}
+.btn-primary:focus{
+    color: #fff;
+    background-color: #333333;
+}
+
+.tabs_text .title{
+    color: black;
+    margin-bottom: 55px;
+}
+.text{
+    margin-bottom: 50px;
+}
+.city_tabs{
+    padding: 25px 0px;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {  /*Скорее всего не так, другой вариант в комментах выше*/
+    color: #fff;
+    background-color: #ff8b38;
+}
+
 
 /* section awesome  */
 
@@ -265,18 +355,13 @@ section{
 .blocks{
     display: flex;
     justify-content: space-between;
-   
-    
+    align-items: flex-end;
     
 }
 .one_block{
     text-align: center;
     width: 30%;
     
-}
-.one_block .up{
-    position: relative;
-    bottom: 40px;
 }
 .one_block .title{
     /*font-family: 'Open Sans', sans-serif;
@@ -301,7 +386,7 @@ section{
     background-color: #f5f5f5;
 }
 .black_section{
-   background-color: #303030;
+ background-color: #303030;
 
 }
 .block_pricing_options .one_block p{
@@ -311,7 +396,7 @@ section{
 .price {
     font-family: 'Merriweather', serif;
     font-size: 60px;
-    line-height: 70px;
+    line-height: 75px;
     color: #ffffff;
 }
 
@@ -339,16 +424,26 @@ section{
 }
 .block_pricing_options .orange_title p{
     border-top: none;
+    line-height: 14px;
+    text-transform: uppercase;
+    font-size: 14px;
+    
 }
 .orange_title  {
-    background-color: #ff8c2c;   
+    background-color: #ff8c2c; 
+}
+.orange_title .title{
+    color: #ffffff;
+    margin-bottom: 0px;
+    
+
 }
 .white_section{
     background-color: #ffffff;
     text-transform: uppercase;
 }
 .block_pricing_options .section_header p{
-    margin-bottom: 118px;
+    margin-bottom: 80px;
 }
 
 
@@ -424,7 +519,7 @@ section{
 }
 .btns_block .btn:hover{
     background-color: #ffffff;
-    color: black;
+    /*color: black;*/
     
 }
 
@@ -450,6 +545,7 @@ textarea{
     border: none;
     border-bottom: 1px solid #d6d6d6;
     resize: none;
+    line-height: 17px;
 }
 .information .message{
     position: relative;
@@ -491,6 +587,9 @@ button:focus{
 .send_message button:hover{
     background-color: #212121;
     transition: 1s;
+    color: white;
+    border-color:#212121;
+    
 }
 
 .input_row label{
