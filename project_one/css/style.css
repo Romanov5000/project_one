@@ -192,7 +192,7 @@ dl, ol, ul {
 }
 .white_fon_registration{
     background-color: #ffffff;
-   
+    border-radius: 0px 0px 10px 10px;
 
 }
 .axit .white_fon_registration input{
